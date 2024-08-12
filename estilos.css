@@ -1,0 +1,34 @@
+*, ::after, ::before{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.gallery{
+    width: min(90%,1200px);   
+    margin: 0 auto;
+    padding: 80px;
+}
+
+.gallery__title{
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.gallery__container{
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(300px,100%), 1fr));
+}
+
+.img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 10px;
+
+    box-shadow: 0 0 6px;
+}
